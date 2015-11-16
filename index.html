@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>inline-style.js by Idnan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    </head>
+    <body id="container">
+        <section class="page-header">
+            <h1 class="project-name">inline-style.js</h1>
+            <h2 class="project-tagline">Generate inline style with javascript</h2>
+        </section>
+        <section class="main-content">
+            <h3>
+                <a id="use-inline-css-helpers-in-a-fashion-way" class="anchor" href="#use-inline-css-helpers-in-a-fashion-way" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use inline css helpers by classes
+            </h3>
+            <div class="highlight highlight-html">
+                <pre><span class="pl-c">&lt;!-- Add margin-top of 25px --&gt;</span>
+				&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>mt25<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre>
+            </div>
+            <div class="highlight highlight-html">
+                <pre><span class="pl-c">&lt;!-- Add font-size of of 14pt --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>fs14pt<span class="pl-pds">"</span></span>&gt;hello!&lt;/<span class="pl-ent">div</span>&gt;</pre>
+            </div>
+            <div class="highlight highlight-html">
+                <pre><span class="pl-c">&lt;!-- Combine helpers --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>fs30 mt25 mb0 ml50px br30%<span class="pl-pds">"</span></span>&gt;hello!&lt;/<span class="pl-ent">div</span>&gt;</pre>
+            </div>
+            <hr>
+            <div class="highlight highlight-js">
+                <pre><span class="pl-c">// use without jquery</span>
+<span class="pl-k">var</span> scope <span class="pl-k">=</span> <span class="pl-c1">window</span>.<span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>container<span class="pl-pds">'</span></span>);
+<span class="pl-c1">window</span>.inlinejs.<span class="pl-c1">apply</span>(scope);
+
+<span class="pl-c">// with jquery</span>
+<span class="pl-k">var</span> scope <span class="pl-k">=</span> $(<span class="pl-s"><span class="pl-pds">'</span>#container<span class="pl-pds">'</span></span>);
+<span class="pl-c1">window</span>.inlinejs.<span class="pl-c1">apply</span>(scope);</pre>
+            </div>
+            <hr />
+            <h3><a id="use-inline-css-helpers-in-a-fashion-way" class="anchor" href="#use-inline-css-helpers-in-a-fashion-way" aria-hidden="true"><span class="octicon octicon-link"></span></a>Try it</h3>
+            <p>Open console (F12) and write</p>
+            <div class="highlight highlight-js">
+                <pre><span class="pl-c1">window</span>.inlinejs.<span class="pl-c1">apply</span>(document);</pre>
+            </div>
+            </pre></div>
+            <p>now start setting helpers in element class attributes</p>
+            <hr />
+            <h3><a id="use-inline-css-helpers-in-a-fashion-way" class="anchor"  aria-hidden="true"><span class="octicon octicon-link"></span></a>Formulas</h3>
+            <pre>t  => top
+b  => bottom
+l  => left
+r  => right
+
+w  => width
+h  => height
+
+p  => padding
+m  => margin
+
+br => borderRadius
+fs => font-size
+fw => font-weight
+lh => line-height
+
+mt => margin-top
+mb => margin-bottom
+ml => margin-left
+mr => margin-right
+
+pt => padding-top
+pb => padding-bottom
+pl => padding-left
+pr => padding-right</pre>
+            <footer class="site-footer">
+                <span class="site-footer-owner"><a href="https://github.com/Idnan/inline-style.js">inline-style.js in github</a></span>
+            </footer>
+        </section>
+    </body>
+    <script type="text/javascript" src="https://cdn.rawgit.com/Idnan/inline-style.js/master/inline-style.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+          InlineStyle.apply(document);
+        }
+    </script>
+</html>
