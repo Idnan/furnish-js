@@ -69,6 +69,7 @@
     }
 
     return InlineStyle = {
-        apply: apply
+        apply: apply,
+        formulas: formulas
     };
 })();
