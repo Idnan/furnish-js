@@ -34,17 +34,17 @@
             <div class="highlight highlight-js">
                 <pre><span class="pl-c">// use without jquery</span>
 <span class="pl-k">var</span> scope <span class="pl-k">=</span> <span class="pl-c1">window</span>.<span class="pl-c1">document</span>.<span class="pl-c1">getElementById</span>(<span class="pl-s"><span class="pl-pds">'</span>container<span class="pl-pds">'</span></span>);
-<span class="pl-c1">window</span>.inlinejs.<span class="pl-c1">apply</span>(scope);
+InlineStyle.<span class="pl-c1">apply</span>(scope);
 
 <span class="pl-c">// with jquery</span>
 <span class="pl-k">var</span> scope <span class="pl-k">=</span> $(<span class="pl-s"><span class="pl-pds">'</span>#container<span class="pl-pds">'</span></span>);
-<span class="pl-c1">window</span>.inlinejs.<span class="pl-c1">apply</span>(scope);</pre>
+InlineStyle.<span class="pl-c1">apply</span>(scope);</pre>
             </div>
             <hr />
             <h3><a id="use-inline-css-helpers-in-a-fashion-way" class="anchor" href="#use-inline-css-helpers-in-a-fashion-way" aria-hidden="true"><span class="octicon octicon-link"></span></a>Try it</h3>
             <p>Open console (F12) and write</p>
             <div class="highlight highlight-js">
-                <pre><span class="pl-c1">window</span>.inlinejs.<span class="pl-c1">apply</span>(document);</pre>
+                <pre>InlineStyle.<span class="pl-c1">apply</span>(document);</pre>
             </div>
             </pre></div>
             <p>now start setting helpers in element class attributes</p>
@@ -80,6 +80,7 @@ pr => padding-right</pre>
             </footer>
         </section>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/Idnan/inline-style.js/master/inline-style.js"></script>
     <script type="text/javascript">
         window.onload = function(){
