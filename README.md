@@ -2,7 +2,7 @@
 Generate inline style with javascript
 -------
 
-Just add the magic classes to elements in real or render time
+Just add the magic classes to elements in real or render time. **<a target='_blank' href='http://idnan.github.io/inline-style.js/'>Demo</a>**
 
 Some formulas:
 ```html
