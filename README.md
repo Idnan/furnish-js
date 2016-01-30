@@ -1,6 +1,6 @@
 # Furnish JS
 
-Let the class on DOM element generate the CSS for you. 
+Let the classes on DOM elements generate the CSS for you. 
 
 Furnish JS is simple **lightweight**, ~2KB when minified, utility that **turns the classes applied upon the DOM elements to CSS**. So that you don't have to manually write the CSS for those minor UI enhancements like increasing the padding, adding a little margin, changing the font size, applying a border radius, pumping up the line-height a bit etc. All you have to do is specify the CSS class on an element at any point of time i.e. either dynamically or statically, it will be *furnished*.
 
@@ -62,3 +62,10 @@ Changing the font size to `15px`
 ```
 <p class="fs14px mt25 mb0 ml2em br30%">You can combine formulas as well</p>
 ```
+
+## Contributing
+
+You can contribute to this project by 
+
+- Adding the support for other CSS attributes. (Fork it, add your feature, create the pull request)
+- Pointing out any bugs or issues
