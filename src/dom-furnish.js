@@ -86,10 +86,11 @@
      */
     function apply(observeElement) {
 
-        var observeElement = observeElement || window.document;
-        observeElement = observeElement instanceof $ ? observeElement[0] : observeElement;
+        var observeElement = observeElement || window.document,
+            observeElement = observeElement instanceof Array ? observeElement[0] : observeElement;
         
         var elements = observeElement.getElementsByTagName('*');
+
         for(var i in elements) {
             var element = elements[i];
             if (typeof(element) === "object") {
