@@ -46,7 +46,7 @@ Currently supported styles are as follows:
 | `t`     | `top`            | `t6` will translate to `top: 6px;`               |
 | `l`     | `left`           | `l30` will translate to `left: 30px`             |
 | `b`     | `bottom`         | `b20em` will translate to `bottom: 20px;`        |
-| `r`     | `right`          | `r20em` will translate to `right: 20px;`         |
+| `r`     | `right`          | `r20em` will translate to `right: 20em;`         |
 
 
 ## Quick Usage Examples
