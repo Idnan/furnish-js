@@ -21,6 +21,8 @@ In order to use it, all you have to specify from the set of classes in a specifi
 [formula][value][unit] # If you donot provide the unit, `px` will be used.
 ```
 
+And run `Funish.apply(domElem)`. `domElem` specifies the container whose children are to be furnished, passing nothing will furnish the whole document.
+
 For example you can specify `mt25` to apply top margin of 25px, `fs14px` to apply font size of 14 px etc. Also you can combine these formulas on an element as well for example an element may have `class="mb20 pt10 pl15 lh20"` etc.
 
 Currently supported styles are as follows:
