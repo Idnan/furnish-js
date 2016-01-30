@@ -2,7 +2,7 @@
 
 Let the classes on DOM elements generate the CSS for you. 
 
-Furnish JS is simple **lightweight**, ~2KB when minified, utility that **turns the classes applied upon the DOM elements to CSS**. So that you don't have to manually write the CSS for those minor UI enhancements like increasing the padding, adding a little margin, changing the font size, applying a border radius, pumping up the line-height a bit etc. All you have to do is specify the CSS class on an element at any point of time i.e. either dynamically or statically, it will be *furnished*.
+Furnish JS is simple **lightweight**, ~2KB when minified, utility that **turns the classes applied upon the DOM elements to CSS**. So that you don't have to manually write the CSS for those minor UI enhancements like increasing the padding, adding a little margin, changing the font size, applying a border radius, pumping up the line-height a bit etc. All you have to do is specify the CSS class on an element at any point of timea i.e. either dynamically or statically, it will be *furnished*.
 
 ## How to Install?
 
@@ -21,7 +21,7 @@ In order to use it, all you have to specify from the set of classes in a specifi
 [formula][value][unit] # If you donot provide the unit, `px` will be used.
 ```
 
-For example you can specify `mt25` to apply top margin of 25px, `fs14px` to applyl font size of 14 px etc. Also you can combine these formulas on an element as well for example an element may have class="mb20 pt10 pl15 lh20" etc.
+For example you can specify `mt25` to apply top margin of 25px, `fs14px` to apply font size of 14 px etc. Also you can combine these formulas on an element as well for example an element may have `class="mb20 pt10 pl15 lh20"` etc.
 
 Currently supported styles are as follows:
 
