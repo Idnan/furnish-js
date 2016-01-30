@@ -1,0 +1,33 @@
+{
+  "name": "furnish-js",
+  "description": "Let the classes on DOM elements generate the CSS for you",
+  "version": "1.0",
+  "main": [
+    "./dist/dom-furnish.min.js"
+  ],
+  "moduleType": [],
+  "keywords": [
+    "javascript",
+    "inline-style",
+    "css",
+    "javascript-css",
+    "furnish",
+    "furnish-js",
+    "js-furnish"
+  ],
+  "authors": [
+    "Adnan Ahmed"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/idnan",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "README.md"
+  ],
+  "dependencies": {
+  }
+}
