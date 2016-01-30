@@ -29,7 +29,9 @@ var domElem = document.getElementById('some-elem')
 Funish.apply(domElem)
 ``` 
 or if you want to run it over the whole document
+
 ```
+Furnish.apply()
 ```
 
 `domElem` specifies the container whose children are to be furnished, passing nothing will furnish the whole document.
