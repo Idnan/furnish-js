@@ -60,7 +60,7 @@ Currently supported styles are as follows:
 | `lh`    | `line-height`    | `lh20em` will translate to `line-height: 20em`   |
 | `t`     | `top`            | `t6` will translate to `top: 6px;`               |
 | `l`     | `left`           | `l30` will translate to `left: 30px`             |
-| `b`     | `bottom`         | `b20em` will translate to `bottom: 20px;`        |
+| `b`     | `bottom`         | `b20em` will translate to `bottom: 20em;`        |
 | `r`     | `right`          | `r20em` will translate to `right: 20em;`         |
 
 
