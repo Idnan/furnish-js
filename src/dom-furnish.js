@@ -41,7 +41,8 @@
     var observer = new MutationObserver(function(mutations, observer) {
         mutations.forEach(function(mutation) {
             var target = mutation.target;
-            furnishElement(target);
+            target.lastClassName !== target.className && furnishElement(target);
+            target.lastClassName = target.className;
         });
     });
 
@@ -86,16 +87,13 @@
      */
     function apply(observeElement) {
 
-        var observeElement = observeElement || window.document,
-            observeElement = observeElement instanceof Array ? observeElement[0] : observeElement;
-        
-        var elements = observeElement.getElementsByTagName('*');
-
-        for(var i in elements) {
+        var scope = observeElement || window.document;
+        var elements = scope.getElementsByTagName('*');
+        for (var i in elements) {
             var element = elements[i];
-            if (typeof(element) === "object") {
+            if (typeof element === 'object') {
                 furnishElement(element);
-                observer.observe(element, {attributes: true });
+                observer.observe(element, { attributes: true, attributeFilter: ['class'] });
             }
         }
     }
